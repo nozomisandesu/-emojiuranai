@@ -196,3 +196,17 @@ function selectEmoji(data) {
 }
 
 // updateDisplayなどは前のままでOK
+
+// 自動でキラキラを発生させる関数
+function autoSparkle() {
+    // 画面のどこかランダムな場所（横方向はランダム、縦方向は一番上）
+    const x = Math.random() * window.innerWidth;
+    const y = Math.random() * window.innerHeight;
+
+    // キラキラを作成（第3引数は false なので通常サイズ）
+    createParticle(x, y, false);
+}
+
+// 0.3秒（300ミリ秒）ごとに1個ずつ自動で作る
+// 数字を小さくするほど、キラキラの密度が上がります
+setInterval(autoSparkle, 200);
