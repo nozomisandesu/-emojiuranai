@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>絵文字のお告げ占い</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔮 絵文字のお告げ</h1>
+        
+        <p id="guide-msg">まずは【運命の色】を選んでね</p>
+
+        <div id="result-display">
+            <div id="selected-emojis"></div>
+            <p id="fortune-text">お告げがここに現れます...</p>
+        </div>
+
+        <button onclick="resetAll()" class="reset-btn">最初からやり直す</button>
+
+        <hr>
+
+        <div id="emoji-picker"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

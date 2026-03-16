@@ -1,0 +1,101 @@
+body {
+    /* linear-gradient: 直線的なグラデーション */
+    /* to bottom right: 左上から右下へ */
+    /* #1a1a2e, #16213e: 今の色より少しだけ暗くして神秘的に */
+    background: linear-gradient(to bottom right, #01012c, #502081, #ad179e);
+    color: white;
+    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    text-align: center;
+}
+
+#guide-msg {
+    color: #fffc5a;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#result-display {
+    background: radial-gradient(circle at center, rgba(98, 120, 157, 0.4), rgba(0, 15, 46, 0.8));
+    /* ...今の設定... */
+
+    padding: 30px;
+    border-radius: 20px;
+    min-height: 180px;
+    margin-bottom: 20px;
+    border: 2px solid #91007d;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+#selected-emojis {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+#fortune-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ffffff;
+    transition: opacity 0.8s ease-in; /* ふわっと出すための設定 */
+    opacity: 1;
+}
+
+#emoji-picker {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.421);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.emoji-item {
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    user-select: none;
+}
+
+.emoji-item:hover {
+    transform: scale(1.4) rotate(10deg);
+}
+
+.reset-btn {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #bf0069;
+    color: #ffffff;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.reset-btn:hover {
+    background: #b30083;
+    color: rgb(255, 255, 255);
+}
+
+/* キラキラ粒のスタイル */
+.particle {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+     clip-path: polygon(50% 0%, 55% 45%, 100% 50%, 55% 55%, 50% 100%, 45% 55%, 0% 50%, 45% 45%);
+    animation: fadeOut 1s forwards;
+}
+
+
+
+@keyframes fadeOut {
+    0% { transform: translate(0, 0) scale(1); opacity: 1; }
+    100% { transform: translate(var(--x), var(--y)) scale(0); opacity: 0; }
+}
