@@ -103,5 +103,5 @@ body {
 }
 
 body, button, input, select, textarea {
-    font-family: 'Noto Serif JP', serif;
+    font-family: 'Noto Serif JP', serif !important;
 }
