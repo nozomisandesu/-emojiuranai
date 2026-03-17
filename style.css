@@ -4,10 +4,11 @@ body {
     /* #1a1a2e, #16213e: 今の色より少しだけ暗くして神秘的に */
     background: linear-gradient(to bottom right, #01012c, #502081, #ad179e);
     color: white;
-    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+    font-family: 'Noto Serif JP', serif;
     display: flex;
     justify-content: center;
     padding: 20px;
+    font-weight: 300;
 }
 
 .container {
