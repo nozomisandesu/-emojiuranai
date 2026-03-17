@@ -4,11 +4,9 @@ body {
     /* #1a1a2e, #16213e: 今の色より少しだけ暗くして神秘的に */
     background: linear-gradient(to bottom right, #01012c, #502081, #ad179e);
     color: white;
-    font-family: 'Noto Serif JP', serif;
     display: flex;
     justify-content: center;
     padding: 20px;
-    font-weight: 300;
 }
 
 .container {
@@ -102,6 +100,6 @@ body {
     100% { transform: translate(var(--x), var(--y)) scale(0); opacity: 0; }
 }
 
-body, button, input, select, textarea {
+body, button, input, select, textarea, h1, p, div {
     font-family: 'Noto Serif JP', serif !important;
 }
